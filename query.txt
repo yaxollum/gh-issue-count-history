@@ -1,0 +1,15 @@
+query { 
+  repository(name:"xonsh",owner:"xonsh") {
+    url,
+    issues(first:10) {
+      edges {
+        cursor,
+        node {
+          number,
+          createdAt,
+					closedAt
+        }
+      }
+    }
+  }
+}
